@@ -17,7 +17,7 @@ public class LoginPanel {
         panelLogin = new JPanel();
         panelLogin.setSize(500,800);
         panelLogin.setOpaque(true);
-        panelLogin.setBackground(Color.PINK);
+        panelLogin.setBackground(Color.WHITE);
         panelLogin.setLayout(new GridBagLayout());
 
 // Administrador de diseño
@@ -31,7 +31,7 @@ public class LoginPanel {
         JLabel titulo = new JLabel("Login");
         titulo.setHorizontalAlignment(SwingConstants.CENTER);
         titulo.setOpaque(true);
-        titulo.setBackground(Color.PINK);
+        titulo.setBackground(Color.WHITE);
         
         gbc.gridx = 0;
         gbc.gridy = 0;

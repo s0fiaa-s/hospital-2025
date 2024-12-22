@@ -7,6 +7,7 @@ import java.awt.Dimension;
 import javax.swing.*;
 
 import vistas.LoginPanel;
+import vistas.bannerPanel;
 
 public class Main {
 
@@ -22,12 +23,8 @@ public class Main {
 
 // PanelBanner
 
-        JPanel panelBanner = new JPanel();
-        panelBanner.setPreferredSize(new Dimension(500,800));
-        panelBanner.setSize(500,800);
-        panelBanner.setOpaque(true);
-        panelBanner.setBackground(Color.RED);
-        miVentana.add(panelBanner,BorderLayout.WEST);
+bannerPanel BannerPanel = new bannerPanel();
+        miVentana.add(BannerPanel.getBanner(), BorderLayout.WEST);
 
 // Panel Login
 
