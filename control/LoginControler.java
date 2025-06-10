@@ -4,17 +4,31 @@ public class LoginControler {
     
 // Datos del usuario temporal
 
-    String usuario = "snsandoval";
-    String contrasenna = "sandoval";
+String[][] credenciales = {
+    {"snsandoval", "sandoval"},
+    {"cbarrondo", "barrondo"},
+    {"pmanzilla", "manzilla"},
+    {"dtaguite", "taguite"},
+    {"jgomez", "gomez"},
+    {"kosorio", "osorio"},
+    {"acanel", "canel"},
+    {"jrodas", "rodas"},
+    {"sjimnez", "jimnez"},
+    {"jpereira", "pereira"}
+};
 
     public boolean validacionDatos (String EUsuario, String EContrasenna) {
 
-        if (this.usuario.equals(EUsuario) && contrasenna.equals(EContrasenna)) {
-            return true;
-        } else {
-            return false;
-        }
+        boolean res = false;
 
+    for (int i = 0; i < credenciales.length; i++) {
+        
+        if (credenciales[i][0].equals(EUsuario) && credenciales[i][1].equals(EContrasenna)) {
+            res = true;
+        }
+}
+
+            return res;
 }
 
 }
